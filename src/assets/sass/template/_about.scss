@@ -1,0 +1,107 @@
+.about {
+  background: url("../images/about-bg-1.png") no-repeat right 85%;
+  background-size: 220px;
+  display: grid;
+  grid-template-columns: auto 300px;
+  column-gap: 4rem;
+  .experties {
+    width: 100%;
+    float: left;
+    top: 1rem;
+    h2 {
+      position: relative;
+      padding-bottom: 0.2rem;
+      margin-bottom: 2rem;
+      &:before {
+        content: "";
+        width: 30%;
+        height: 1px;
+        background: #26278b;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      small {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+    .boxgroup {
+      width: 100%;
+      position: relative;
+      float: left;
+      .sticky {
+        position: sticky !important;
+        -webkit-position: sticky;
+        top: 0;
+      }
+      &:before {
+        content: "";
+        width: 1px;
+        height: 96%;
+        position: absolute;
+        left: -2rem;
+        top: 6px;
+        background: #26278b;
+      }
+      .box {
+        width: 100%;
+        float: left;
+        margin-bottom: 0.5rem;
+        h5 {
+          margin-bottom: 0.2rem;
+          color: #26278b;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.discussProject {
+  @extend .innerContainer;
+  .displayimg {
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+    &:before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: #26278b;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      border-top-left-radius: 0.5rem;
+    }
+    &:after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: #26278b;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-bottom-right-radius: 0.5rem;
+    }
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+  a {
+    display: inline-block;
+    padding-right: 0.5rem;
+    i {
+      color: #26278b;
+      display: inline-block;
+    }
+  }
+}

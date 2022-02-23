@@ -1,0 +1,43 @@
+//FONTS & SIZE
+$bodyFont : 'Roboto', sans-serif;
+$bodyFontsize : 0.875rem;
+
+//COLOR
+$clr-primary : #26278b;
+
+//TEXT-COLOR
+$text-body : #000000;
+$text-primary : #26278b;
+
+$text-success : #339900;
+$text-error : #cc3300;
+$text-warning : #26278b;
+
+//BACKGROUND COLOR
+$bg-primary : #26278b;
+$bg-secondary : #212121;
+$bg-gray : #eaf0ff;
+
+// ALERT BACKGROUND
+$bg-success : #339900;
+$bg-error : #cc3300;
+$bg-warning : #26278b;
+
+///TRANSITION
+$transition: all ease 0.4s;
+
+//TRANSFORM
+$imgTransform: scale(1.1);
+
+//RADIUS
+$radius: .25rem;
+
+//BORDER
+$border: 1px solid #dddcdb;
+
+//BREAK POINT
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl:1200px

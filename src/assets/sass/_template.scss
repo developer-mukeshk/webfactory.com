@@ -1,0 +1,12 @@
+@import "template/home";
+@import "template/about";
+@import "template/services";
+@import "template/contact";
+@import "template/portfolio";
+
+.error {
+  display: flex;
+  height: calc(100vh - 160px) ;
+  justify-content: center;
+  align-items: center;
+}

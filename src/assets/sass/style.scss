@@ -1,0 +1,16 @@
+@import "layout";
+@import "component";
+@import "template";
+@import "widget";
+
+.wrapper {
+  @extend .wrapContainer;
+}
+
+.templateBody {
+  @extend .wrapContainer;
+  .loadTemplate {
+    @extend .innerContainer;
+    padding: 2rem 0;
+  }
+}

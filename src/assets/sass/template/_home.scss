@@ -1,0 +1,107 @@
+.homeTemplate {
+	display: flex;
+	flex-direction: column;
+
+	//recentWork
+	.recentWork {
+		@extend .wrapContainer;
+		padding-top: 2rem;
+		padding-bottom: 7rem;
+		background: url("../images/webfactory-gray.png") no-repeat center bottom;
+		text-align: center;
+
+		.container {
+			@extend .innerContainer;
+			position: relative;
+			h3 {
+				color: #26278b;
+			}
+		}
+	}
+
+	//features
+	.features {
+		@extend .wrapContainer;
+		background: #f8f8ff;
+		padding: 2rem 0;
+		text-align: center;
+		position: relative;
+		&:before {
+			content: "";
+			width: 50%;
+			height: 1px;
+			background: #26278b;
+			position: absolute;
+			left: 50%;
+			margin-left: -25%;
+			bottom: 0;
+		}
+		.container {
+			@extend .innerContainer;
+			display: flex;
+			flex-direction: column;
+			row-gap: 2rem;
+			padding: 1rem 0;
+			.title {
+				span {
+					display: block;
+					margin-bottom: 1rem;
+				}
+				h4 {
+					display: inline-block;
+					color: #26278b;
+					position: relative;
+				}
+			}
+		}
+		.featureWrap {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 4rem;
+			.item {
+				text-align: center;
+				span.fa {
+					width: 75px;
+					height: 75px;
+					text-align: center;
+					border: 1px solid #c7c7c7;
+					border-radius: 0.25rem;
+					padding: 1rem 0;
+					font-size: 2.5rem;
+					margin-bottom: 1rem;
+					color: #26278b;
+				}
+				h5 {
+					margin-bottom: 0.3rem;
+					color: #26278b;
+				}
+			}
+		}
+	
+	}
+
+	//testimonial
+	.testimonial {
+		@extend .wrapContainer;
+		background: url("../images/quote.png") no-repeat left center;
+		padding: 3rem 0;
+		.container {
+			@extend .innerContainer;
+			display: grid;
+			grid-template-columns: auto 175px;
+			align-items: center;
+			column-gap: 2rem;
+			.client {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+
+	.laptopt {
+		@extend .wrapContainer;
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0;
+	}
+}

@@ -1,0 +1,76 @@
+.wrapContainer {
+  width: 100%;
+  float: left;
+}
+
+.innerContainer {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
+
+.transparent_body_text {
+  color: transparentize($text-body, $amount: 0.6);
+}
+
+.transparent_primary_text {
+  color: transparentize($text-primary, $amount: 0.2);
+}
+
+.modalWindow {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2000;
+  background: transparentize($color: #000, $amount: 0.4);
+  display: none;
+}
+
+// ALERT CLASSESS
+.success {
+  color: darkgreen;
+}
+.danger {
+  color: red;
+}
+.text-primary {
+  color: $text-primary;
+}
+
+
+
+
+.dataForm {
+  width: 100%;
+  float: left;
+  .data_row {
+    display: flex;
+    grid-column-gap: 1.25rem;
+    .inputField {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: .25rem;
+      margin-bottom: .75rem;
+      &.hide {
+        display: none;
+      }
+      label {
+        font-weight: 400;
+        
+      }
+      small.help_text {
+        font-size: 0.75rem;
+        
+      }
+      &.place, &.qualification {
+        flex-grow: 2
+      }
+    }
+    
+  }
+  .inputButton {
+    margin-bottom: 0;
+  }
+}

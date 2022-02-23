@@ -1,0 +1,10 @@
+.footerWrap {
+  @extend .wrapContainer;
+  padding: 1rem 0;
+  border-top: $border;
+  .footer {
+    @extend .innerContainer;
+    display: flex;
+    justify-content: space-between;
+  }
+}

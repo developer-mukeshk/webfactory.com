@@ -1,0 +1,24 @@
+.navigation {
+  width: auto;
+  float: right;
+  ul {
+    width: auto;
+    float: left;
+    list-style-type: none;
+    margin: 0rem;
+    li {
+      float: left;
+      a {
+        display: block;
+        padding: 1rem;
+        &:hover {
+          text-decoration: none;
+          color: #26278b;
+        }
+      }
+      a.active {
+        color: #26278b;
+      }
+    }
+  }
+}

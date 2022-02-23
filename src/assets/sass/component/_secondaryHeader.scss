@@ -1,0 +1,25 @@
+.secondaryHeader {
+	@extend .wrapContainer;
+  position: relative;
+	img {
+		width: 100%;
+		height: 120px;
+		object-fit: cover;
+	}
+	.page_title {
+		@extend .innerContainer;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+		left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 100;
+    h1 {
+      margin-bottom: 0;
+      color: #fff;
+    }
+	}
+}

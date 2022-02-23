@@ -1,0 +1,94 @@
+.inputField {
+  width: 100%;
+  margin-bottom: 1rem;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    @include inputText;
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      background: #f6f6f6;
+      cursor: not-allowed;
+    }
+  }
+  textarea {
+    resize: none;
+    height: 100%;
+  }
+  .submit-btn,
+  input[type="button"],
+  input[type="submit"] {
+    @include inputButton;
+  }
+  .reset-btn,
+  input[type="reset"] {
+    @include input;
+    background: #eaedee;
+    border: $border;
+    color: #5c7986;
+    cursor: pointer;
+    &:hover {
+      background-color: darken(#eaedee, $amount: 10%);
+    }
+  }
+  .selectbox {
+    position: relative;
+    select {
+      width: 100%;
+      @include input;
+      ::selection {
+        color: red;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &:before {
+      content: "\f107";
+      font-family: FontAwesome;
+      display: inline-block;
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+  .calendar {
+    position: relative;
+    &:before {
+      content: "\f073";
+      font-family: FontAwesome;
+      display: inline-block;
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      font-weight: 500;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+  .input_group {
+    display: inline-flex;
+    column-gap: 1.25rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    line-height: inherit;
+    border: $border;
+    background: #fff;
+    border-radius: $radius;
+    padding: 0.5rem;
+    label[for="group_item"] {
+      display: flex;
+      column-gap: 0.25rem;
+      align-items: center;
+    }
+  }
+}
