@@ -66,42 +66,20 @@
 
 .discussProject {
   @extend .innerContainer;
-  .displayimg {
-    width: 100%;
-    padding: 0.5rem;
-    position: relative;
-    &:before {
-      content: "";
-      width: 100px;
-      height: 100px;
-      background: #26278b;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
-      border-top-left-radius: 0.5rem;
-    }
-    &:after {
-      content: "";
-      width: 100px;
-      height: 100px;
-      background: #26278b;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      border-bottom-right-radius: 0.5rem;
-    }
-    img {
-      border-radius: 0.5rem;
-    }
-  }
+  text-align: center;
+  margin-bottom: 2rem;
   a {
     display: inline-block;
     padding-right: 0.5rem;
-    i {
-      color: #26278b;
-      display: inline-block;
+    background: $bg-primary;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: $radius;
+    font-size: 1rem;
+    text-transform: capitalize;
+    i.fa {
+      margin-right: 0.25rem;
+      color: #fff; 
     }
   }
 }

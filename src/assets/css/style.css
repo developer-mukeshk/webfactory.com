@@ -387,6 +387,9 @@ small {
   align-items: center;
   grid-column-gap: 1rem;
 }
+.headerWrap .header .logo img {
+  max-width: 270px;
+}
 
 .footerWrap {
   padding: 1rem 0;
@@ -606,43 +609,23 @@ small {
   display: block;
 }
 
-.discussProject .displayimg {
-  width: 100%;
-  padding: 0.5rem;
-  position: relative;
-}
-.discussProject .displayimg:before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background: #26278b;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  border-top-left-radius: 0.5rem;
-}
-.discussProject .displayimg:after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background: #26278b;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-bottom-right-radius: 0.5rem;
-}
-.discussProject .displayimg img {
-  border-radius: 0.5rem;
+.discussProject {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .discussProject a {
   display: inline-block;
   padding-right: 0.5rem;
+  background: #26278b;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
-.discussProject a i {
-  color: #26278b;
-  display: inline-block;
+.discussProject a i.fa {
+  margin-right: 0.25rem;
+  color: #fff;
 }
 
 .services {

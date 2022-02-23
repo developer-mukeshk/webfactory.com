@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import { Link } from 'react-router-dom';
 import SecondaryHeader from '../masterLayout/SecondaryHeader';
 
 const About = () => {
@@ -47,6 +48,7 @@ const About = () => {
       <div className="discussProject">
         <h4>- Discuss Project With Us - </h4>
         <p>Etiam mattis, mi nec pretium posuere, dui dolor viverra nibh, ut pharetra nisl libero non velit. Maecenasv viverra sollicitudin malesuada. Donec maximus, nisi eu finibus dignissim, ex tellus semper massa. </p>
+        <Link to="/contact" className='button'><i class="fa fa-phone" aria-hidden="true"></i> Request A Call Back</Link>
       </div>
     </React.Fragment>
   );
