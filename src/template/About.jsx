@@ -10,11 +10,19 @@ const About = () => {
       <SecondaryHeader page_title="About Us" />
       <div className="loadTemplate about">
         <div className="description">
-          <p>Etiam mattis, mi nec pretium posuere, dui dolor viverra nibh, ut pharetra nisl libero non velit. Maecenas viverra sollicitudin malesuada. Donec maximus, nisi eu finibus dignissim, ex tellus semper massa, ut viverra tortor leo sit amet risus. Ut ligula nibh, pellentesque id nisl non, lobortis faucibus quam. Nullam rhoncus ultricies dolor eget feugiat. Aenean blandit augue in elit porta, sed mollis mauris bibendum. Vestibulum vitae nibh sit amet lectus hendrerit hendrerit. Ut non nisi tortor. Suspendisse sagittis commodo augue quis scelerisque. Nunc augue neque, ultricies id ultricies nec, ultrices quis leo. Sed at posuere urna. Aliquam venenatis, nisi eget commodo hendrerit, augue turpis ornare neque, nec dapibus arcu risus et tortor. Aliquam non tempus ligula. Ut ac lectus eu sapien hendrerit bibendum.</p>
+          <p>Having a cohesive digital strategy enables businesses to have a firmer grip on their target audience as they have an insightful awareness about the platforms their audiences prefer to spend time on. Plus, the capability to measure the performance of marketing tactics brings in cost-effectiveness in strategy and helps them identify the nonperforming areas.</p>
+
           <h5>WORKING PROCESS</h5>
           <p>Etiam mattis, mi nec pretium posuere, dui dolor viverra nibh, ut pharetra nisl libero non velit. Maecenas viverra sollicitudin malesuada. Donec maximus, nisi eu finibus dignissim, ex tellus semper massa, ut viverra tortor leo sit amet risus. Ut ligula nibh, pellentesque id nisl non, lobortis faucibus quam. Nullam rhoncus ultricies dolor eget feugiat. Aenean blandit augue in elit porta, sed mollis mauris bibendum. Vestibulum vitae nibh sit amet lectus hendrerit hendrerit.</p>
+
           <h5>DESIGN / DEVELOPMENT</h5>
           <p>Etiam mattis, mi nec pretium posuere, dui dolor viverra nibh, ut pharetra nisl libero non velit. Maecenas viverra sollicitudin malesuada. Donec maximus, nisi eu finibus dignissim, ex tellus semper massa, ut viverra tortor leo sit amet risus. Ut ligula nibh, pellentesque id nisl non, lobortis faucibus quam. Nullam rhoncus ultricies dolor eget feugiat. Aenean blandit augue in elit porta, sed mollis mauris bibendum. Vestibulum vitae nibh sit amet lectus hendrerit hendrerit.</p>
+          
+          <h5>DIGITAL STRATEGY <small>Making businesses rapidly adapt to changing circumstances</small></h5>
+          <p>As a formidable branding and digital agency, we provide strategic value for companies, brands, and future-driven projects through digital strategies that are the key to any organization's future viability. Our digital strategy focuses on how businesses can ideate, innovate and create new strategies and business models to thrive in the digital age.</p>
+
+          <h5>Finding an agency who understands your digital needs is hard.</h5>
+          <p>Let our amazing team help you craft your digital strategy today.</p>
         </div>
         <div className="experties">
           <h2><small>AREA OF</small> EXPERTIES</h2>

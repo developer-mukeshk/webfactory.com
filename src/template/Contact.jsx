@@ -32,24 +32,26 @@ const Contact = () => {
                 <div className="inputField">
                   <label for="title">Mobile *</label>
                   <input type="text" placeholder="Ex: 7707368031" />
-                  <small className="help_text">Dont prefix 0 or 91</small>
-                </div>
+                 </div>
                 <div className="inputField">
-                  <label for="title">Who are you ? *</label>
+                  <label for="title">How Did You Hear About Us ? *</label>
                   <div className="selectbox">
                     <select name="">
-                      <option value="reseller">Reseller</option>
-                      <option value="clients">Clients</option>
+                      <option value="reseller">Search Engine</option>
+                      <option value="clients">Word of Mouth</option>
+                      <option value="clients">Social (Facebook, LinkedIn, Twitter, etc.)</option>
+                      <option value="clients">In-Person Events</option>
+                      <option value="clients">Friends or Co-worker</option>
+                      <option value="clients">Other</option>
                     </select>
                   </div>
-                  <small className="help_text">Are you a Reseller or Clients ?</small>
-                </div>
+                 </div>
               </div>
               <div className="data_row">
                 <div className="inputField">
                   <label for="title">Message *</label>
                   <textarea name="" rows="5"></textarea>
-                  <small className="help_text">Max 150 Characters Allowed</small>
+                  <small className="help_text">Max 250 Characters Allowed</small>
                 </div>
               </div>
               <div className="inputField">
@@ -59,15 +61,19 @@ const Contact = () => {
             <div className="contact_type">
               <div className="item_box">
                 <small>Location</small>
-                <p>4031 Colonal Glenn Hwy Ste 100<br />Beavercreek, OH 45431</p>
+                <span>Delhi, India</span>
               </div>
               <div className="item_box">
                 <small>Phone</small>
-                <span>+1 937 344 6241</span>
+                <span>+1 9899 3544 63</span>
+              </div>
+              <div className="item_box">
+                <small>WhatsApp</small>
+                <span><a href="https://api.whatsapp.com/send?phone=919899354463" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Start Chat With Us</a></span>
               </div>
               <div className="item_box">
                 <small>Email</small>
-                <span>contact@korfish.com</span>
+                <span>contact@webfactory.in</span>
               </div>
               <div className="item_box">
                 <small>Explore</small>
@@ -78,13 +84,7 @@ const Contact = () => {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="social_network">
-            <div className="item"><Link to="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></Link></div>
-            <div className="item"><Link to="https://twitter.com/?lang=en" target="_blank"><i className="fa fa-twitter" aria-hidden="true"></i></Link></div>
-            <div className="item"><Link to="https://www.linkedin.com/signup" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></div>
-            <div className="item"><Link to="https://www.youtube.com/" target="_blank"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></div>
-          </div>
+          </div> 
         </div>
       </div>
     </React.Fragment>

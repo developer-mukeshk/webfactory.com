@@ -3,26 +3,36 @@
   grid-template-columns: auto max-content;
   column-gap: 1rem;
   .loadservices {
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
   .quickLinks {
     position: relative;
     .aside {
-      
-      border: 1px solid #f6f6f6;
+      border: $border;
       border-bottom: none;
+      border-radius: $radius;
+      background: #fff;
       ul {
         list-style-type: none;
-        li a {
-          display: block;
-          padding: 1rem;
-          //background: #f6f6f6;
-          border-bottom: 1px solid #f6f6f6;
-          &:hover {
-            background-color: #26278b;
-            border-bottom: 1px solid transparent;
-            color: #fff;
-            text-decoration: none;
+        li {
+          position: relative;
+          a {
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-bottom: $border;
+            &:hover {
+              background-color: #26278b;
+              border-bottom: 1px solid transparent;
+              color: #fff;
+            }
+          }
+          &:first-of-type a {
+            border-top-left-radius: $radius;
+            border-top-right-radius: $radius;
+          }
+          &:last-of-type a {
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
           }
         }
         li a.active {

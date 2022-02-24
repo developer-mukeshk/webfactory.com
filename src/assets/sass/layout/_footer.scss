@@ -6,5 +6,16 @@
     @extend .innerContainer;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .social_network {
+      display: flex;
+      column-gap: 1rem;
+      a {
+        color: #5b5b5b;
+        &:hover {
+          color: $text-primary;
+        }
+      }
+    }
   }
 }

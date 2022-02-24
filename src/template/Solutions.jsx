@@ -4,8 +4,7 @@ import SecondaryHeader from '../masterLayout/SecondaryHeader';
 import { NavLink, Switch, Route, useRouteMatch } from "react-router-dom";
 
 // IMPORT COMPONENT
-import SchoolERP from './solutions/SchoolERP';
-import CollegeERP from './solutions/CollegeERP';
+import ErpSolution from './solutions/ErpSolution';
 import Ecommerce from './solutions/Ecommerce';
 import CMS from './solutions/CMS';
 import CRM from './solutions/CRM';
@@ -20,9 +19,8 @@ const Solutions = () => {
       <div className="loadTemplate services">
         <div className='loadservices'>
           <Switch>
-            <Route path={`${path}/school-erp/`} component={SchoolERP} />
-            <Route path={`${path}/college-erp`} component={CollegeERP} />
-            <Route path={`${path}/ECommerce`} component={Ecommerce} />
+            <Route path={`${path}/erp-solutions/`} component={ErpSolution} />
+            <Route path={`${path}/ecommerce`} component={Ecommerce} />
             <Route path={`${path}/cms`} component={CMS} />
             <Route path={`${path}/crm`} component={CRM} />
           </Switch>
@@ -30,11 +28,10 @@ const Solutions = () => {
         <div className='quickLinks'>
           <div className="aside">
             <ul>
-              <li><NavLink to={`${url}/school-erp`}>School ERP</NavLink></li>
-              <li><NavLink to={`${url}/college-erp`}>College ERP</NavLink></li>
-              <li><NavLink to={`${url}/ECommerce`}>E-Commerce Solution</NavLink></li>
-              <li><NavLink to={`${url}/cms`}>Content Management System (CMS)</NavLink></li>
-              <li><NavLink to={`${url}/crm`}>Customer Relationship Management (CRM)</NavLink></li>
+              <li><NavLink to={`${url}/erp-solutions`}>ERP Solutions</NavLink></li>
+              <li><NavLink to={`${url}/ecommerce`}>Ecommerce Solution</NavLink></li>
+              <li><NavLink to={`${url}/cms`}>Content Management System</NavLink></li>
+              <li><NavLink to={`${url}/crm`}>Customer Relationship Management</NavLink></li>
             </ul>
           </div>
         </div>

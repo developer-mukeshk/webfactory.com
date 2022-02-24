@@ -9,6 +9,9 @@
 
 .templateBody {
   @extend .wrapContainer;
+  min-height: calc(100vh - 135px);
+  background: url("../images/graphic-01.png") no-repeat right top;
+  background-size: cover;
   .loadTemplate {
     @extend .innerContainer;
     padding: 2rem 0;

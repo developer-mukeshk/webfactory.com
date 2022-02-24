@@ -1,0 +1,31 @@
+.testimonials {
+  @extend .innerContainer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  .testimonial {
+    border: $border;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 4rem;
+    background: #fff;
+    img {
+      max-width: 32px;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+      & + span {
+        display: block;
+        font-weight: 500;
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+}

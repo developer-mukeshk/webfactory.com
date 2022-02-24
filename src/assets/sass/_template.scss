@@ -3,10 +3,83 @@
 @import "template/services";
 @import "template/contact";
 @import "template/portfolio";
+@import "template/testimonial";
 
 .error {
   display: flex;
+  flex-direction: column;
   height: calc(100vh - 160px) ;
   justify-content: center;
   align-items: center;
+  h4 {
+    margin-bottom: 0.25rem;
+    & + p {
+      margin-bottom: 0.75rem;
+       
+    }
+  }
+}
+
+
+.templateDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  .page_title {
+    position: relative;
+    padding-bottom: 1rem;
+    &:before {
+      content: '';
+      width: 100px;
+      height: 1px;
+      background: $bg-primary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    h4 {
+      margin-bottom: 0;
+      font-size: 1.25rem;
+      small {
+        display: block;
+        font-size: 0.875rem;
+        padding-top: 0.25rem;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    .block_content {
+      position: relative;
+      h6 {
+        margin-bottom: 0.25rem;
+        color: $text-primary;
+      }
+      .features {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.75rem;
+        label[for="title"] {
+          font-weight: bold;
+          margin-bottom: 0.25rem;
+        }
+        ul {
+          list-style-type: none;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          border: $border;
+          border-bottom: none;
+          li {
+            position: relative;
+            padding: 0.25rem 0.5rem;
+            border-bottom: $border;
+            &:nth-of-type(odd) {
+              border-right: $border;
+            }
+          }
+        }
+      }
+      
+    }
+  }
 }
