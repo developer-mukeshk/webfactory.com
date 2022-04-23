@@ -63,14 +63,14 @@ const Contact = () => {
                 <small>Location</small>
                 <span>Delhi, India</span>
               </div>
-              <div className="item_box">
+              {/* <div className="item_box">
                 <small>Phone</small>
                 <span>+1 9899 3544 63</span>
               </div>
               <div className="item_box">
                 <small>WhatsApp</small>
                 <span><a href="https://api.whatsapp.com/send?phone=919899354463" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Start Chat With Us</a></span>
-              </div>
+              </div> */}
               <div className="item_box">
                 <small>Email</small>
                 <span>contact@webfactory.in</span>
